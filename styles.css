@@ -9,8 +9,8 @@ body {
 
 .container {
     position: relative;
-    width: 700px;
-    height: 800px;
+    width: 800px;
+    height: 700px;
     overflow: hidden;
 }
 
@@ -44,7 +44,7 @@ body {
     position: absolute;
     left: 49%;
     transform: translateX(-50%) rotate(10deg); /* Tilt to the right */
-    max-height: 90%;
+    max-height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
     z-index: 1;
