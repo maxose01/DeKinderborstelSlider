@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: transparent;
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: flex-end; /* Align items to the bottom */
+}
+
+.frame.active {
+    display: flex;
+}
+
+.frame img.cloud {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease-in-out;
+    z-index: 0;
+}
+
+.frame img.toothbrush {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(10deg); /* Tilt to the right */
+    max-height: 80%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.frame.active .toothbrush {
+    opacity: 1;
+}
+
+.frame.slide-out .cloud {
+    transform: translateX(-100%);
+}
+
+.color-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 50;
+}
+
+.color-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.color-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.color-btn.yellow {
+    background-color: yellow;
+}
+
+.color-btn.blue {
+    background-color: blue;
+}
+
+.color-btn.pink {
+    background-color: pink;
+}

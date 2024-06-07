@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Toothbrush Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="frame yellow active" id="yellow-frame">
+            <img class="cloud" src="images/cloud-yellow.webp" alt="Yellow Cloud">
+            <img class="toothbrush" src="images/yellow.png" alt="Yellow Toothbrush">
+        </div>
+        <div class="frame blue" id="blue-frame">
+            <img class="cloud" src="images/blue-cloud.webp" alt="Blue Cloud">
+            <img class="toothbrush" src="images/blue.png" alt="Blue Toothbrush">
+        </div>
+        <div class="frame pink" id="pink-frame">
+            <img class="cloud" src="images/pink-cloud.webp" alt="Pink Cloud">
+            <img class="toothbrush" src="images/pink.png" alt="Pink Toothbrush">
+        </div>
+        <div class="color-buttons">
+            <button class="color-btn yellow" data-color="yellow"></button>
+            <button class="color-btn blue" data-color="blue"></button>
+            <button class="color-btn pink" data-color="pink"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
