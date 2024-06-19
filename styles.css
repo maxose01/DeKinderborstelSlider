@@ -92,3 +92,38 @@ body {
 .color-btn.pink {
     background-color: pink;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100%;
+        max-width: none;
+        max-height: none;
+    }
+
+    .frame {
+        align-items: center; /* Adjust alignment for smaller screens */
+    }
+
+    .frame img.cloud {
+        width: 80%;
+        height: auto;
+    }
+
+    .frame img.toothbrush {
+        bottom: 0; /* Adjust positioning for smaller screens */
+        max-height: 80%; /* Adjust size for smaller screens */
+    }
+
+    .color-buttons {
+        bottom: 5px;
+        gap: 5px;
+    }
+
+    .color-btn {
+        width: 15px;
+        height: 15px;
+    }
+}
