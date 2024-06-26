@@ -1,8 +1,5 @@
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: transparent;
 }
@@ -10,7 +7,7 @@ body {
 .container {
     position: relative;
     width: 375px;
-    height: 700px;
+    height: 400px;
     overflow: hidden;
 }
 
