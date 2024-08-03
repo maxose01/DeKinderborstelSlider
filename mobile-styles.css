@@ -2,10 +2,15 @@ body {
     display: flex;
     margin: 0;
     background-color: transparent;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;  
+    font-weight: 600;
+    font-style: normal;  
 }
 
 .container {
-    position: relative;
+    position: absolute;
+    margin-top: 150px;
     width: 375px;
     height: 400px;
     overflow: hidden;
@@ -90,6 +95,49 @@ body {
 .color-btn.pink {
     background-color: pink;
 }
+
+
+.minicloud {
+    width: 175px; height: 50px;
+	
+	background:#FFEBF2;
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	
+	position: relative;
+	margin: 50px auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.minicloud:after, .minicloud:before {
+	content: '';
+	position: absolute;
+	background: #FFEBF2;
+	z-index: -1
+}
+
+.minicloud:after {
+	width: 50px; height: 50px;
+	top: -25px; left: 25px;
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+.minicloud:before {
+	width: 90px; height: 90px;
+	top: -45px; right: 25px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
 
 /* Media Queries for Responsiveness */x
 @media (max-width: 775px) {
