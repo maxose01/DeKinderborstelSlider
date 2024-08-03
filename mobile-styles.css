@@ -8,12 +8,21 @@ body {
     font-style: normal;  
 }
 
+.top-cloud-container {
+    width: 150px; /* Smaller width */
+    position: fixed;
+    top: 30px; /* Adjust as needed */
+    left: 0px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's on top */
+}
+
 .container {
-    position: absolute;
     margin-top: 150px;
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     height: 400px;
     overflow: hidden;
+    position: relative;
 }
 
 .frame {
@@ -96,50 +105,59 @@ body {
     background-color: pink;
 }
 
-
 .minicloud {
-    width: 175px; height: 50px;
-	
-	background:#FFEBF2;
-	
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	
-	position: relative;
-	margin: 50px auto;
+    width: 150px; /* Adjusted width */
+    height: 40px; /* Adjusted height */
+    background: #FFF7D3; /* Initial color */
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    position: relative;
+    margin: 10px auto; /* Adjusted margin */
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
+    transition: background 1s ease-in-out, opacity 1s ease-in-out; /* Ensure opacity transition */
+    text-align: center; /* Center text */
+    opacity: 1; /* Ensure opacity is set to 1 by default */
+    font-size: 12px; /* Adjusted font size */
+}
+
+.minicloud p {
+    margin: 0; /* Remove default margin */
+    position: absolute;
+    top: 2px;
 }
 
 .minicloud:after, .minicloud:before {
-	content: '';
-	position: absolute;
-	background: #FFEBF2;
-	z-index: -1
+    content: '';
+    position: absolute;
+    background: #FFF7D3; /* Ensure the default color is set */
+    z-index: -1;
+    transition: background 1s ease-in-out;
 }
 
 .minicloud:after {
-	width: 50px; height: 50px;
-	top: -25px; left: 25px;
-	
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
+    width: 40px; /* Adjusted size */
+    height: 40px; /* Adjusted size */
+    top: -20px; /* Adjusted position */
+    left: 20px; /* Adjusted position */
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
 }
 
 .minicloud:before {
-	width: 90px; height: 90px;
-	top: -45px; right: 25px;
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
+    width: 70px; /* Adjusted size */
+    height: 70px; /* Adjusted size */
+    top: -35px; /* Adjusted position */
+    right: 20px; /* Adjusted position */
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
 }
 
-
-/* Media Queries for Responsiveness */x
+/* Media Queries for Responsiveness */
 @media (max-width: 775px) {
     .container {
         width: 100%;
