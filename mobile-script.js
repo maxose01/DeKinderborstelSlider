@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const totalFrames = frames.length;
     const cloudText = document.getElementById('cloud-text');
     const minicloud = document.querySelector('.minicloud');
-    const colors = ['#FFF7D3', '#D7F0FF', '#FFEBF2'];
-    const texts = ['Speels karakter', 'Frisse kleur', 'Zacht gevoel'];
+    const colors = ['#FFDE4D', '#C1E1F4'];
+    const texts = ['Gezonde glimlach', 'Plezier bij poetsen', 'Gemakkelijk in gebruik', 'Langdurige batterij', 'Kindvriendelijk ontwerp', 'Effectieve reiniging', 'Tandvleesbescherming', 'Duurzaam en betrouwbaar', 'Gratis verzending', 'Minder tandplak', 'Beter poetsen'];
 
     if (!cloudText || !minicloud) {
         console.error('Required elements are not found in the DOM.');
