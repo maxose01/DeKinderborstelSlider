@@ -14,6 +14,17 @@ body {
     top: 30px; /* Adjust as needed */
     left: 0px; /* Adjust as needed */
     z-index: 1000; /* Ensure it's on top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-left: 25px;
+    margin-top: 30px; /* Space between minicloud and arrow */
+    transform: scaleX(-1) rotate(60deg);
 }
 
 .container {
@@ -163,9 +174,6 @@ body {
         padding-bottom: 100%;
         max-width: none;
         max-height: none;
-    }
-
-    .frame {
     }
 
     .frame img.cloud {
