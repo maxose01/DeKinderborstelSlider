@@ -23,7 +23,7 @@ body {
     width: 100px; /* Adjust size as needed */
     height: auto;
     margin-left: 25px;
-    margin-top: 30px; /* Space between minicloud and arrow */
+    margin-top: 10px; /* Space between minicloud and arrow */
     margin-bottom: 10px;
     transform: scaleX(-1) rotate(60deg);
 }
