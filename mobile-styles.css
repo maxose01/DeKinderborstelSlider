@@ -27,7 +27,7 @@ body {
 }
 
 .arrow .draw-arrow {
-    stroke-width: 3;
+    stroke-width: 4;
     stroke: #2D2D2D;
     fill: none;
     stroke-dasharray: 400;
