@@ -1,18 +1,11 @@
-@font-face {
-    font-family: 'Jua';
-    src: url('fonts/jua-cufonfonts-webfont/Jua-Regular.woff') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     display: flex;
     margin: 0;
     background-color: transparent;
-    font-family: "Jua", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;  
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;  
 }
 
 .top-cloud-container {
@@ -27,11 +20,10 @@ body {
 }
 
 .arrow {
-    width: 100px;
-    height: 150px;
+    width: 230px;
+    height: 200px;
+    margin: 0 auto;
     transform: rotate(125deg) scale(-1, 1);
-    margin-left: 55px;
-    margin-bottom: 25px;
 }
 
 .arrow .draw-arrow {
@@ -43,9 +35,7 @@ body {
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
     animation-name: draw;
-    transition: opacity 1s ease-out; /* Ensure opacity transition */
 }
-
 
 .arrow .draw-arrow.tail-1 {
     animation-delay: .5s;
@@ -148,11 +138,6 @@ body {
     background-color: pink;
 }
 
-#cloud-text {
-    margin: 5px 10px !important;
-    margin-bottom: 10px;
-}
-
 .minicloud {
     width: 150px; /* Adjusted width */
     height: 40px; /* Adjusted height */
@@ -161,15 +146,14 @@ body {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     position: relative;
-    margin: 30px auto; /* Adjusted margin */
-    margin-bottom: 15px;
+    margin: 10px auto; /* Adjusted margin */
     display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
-    text-align: center; /* Center text */
+    align-items: center;
+    justify-content: center;
     transition: background 1s ease-in-out, opacity 1s ease-in-out; /* Ensure opacity transition */
+    text-align: center; /* Center text */
     opacity: 1; /* Ensure opacity is set to 1 by default */
-    font-size: 13px; /* Adjusted font size */    
+    font-size: 12px; /* Adjusted font size */
 }
 
 .minicloud p {
@@ -229,16 +213,18 @@ body {
         width: 100%;
         height: auto;
         padding-bottom: 100%;
+        max-width: none;
+        max-height: none;
     }
 
     .frame img.cloud {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 
     .frame img.toothbrush {
         bottom: 0; /* Adjust positioning for smaller screens */
-        max-height: 100%; /* Adjust size for smaller screens */
+        max-height: 80%; /* Adjust size for smaller screens */
     }
 
     .color-buttons {

@@ -68,11 +68,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function fadeCloud() {
         minicloud.style.opacity = 0; // Fade out
-        drawArrows.forEach(arrow => {
-            arrow.style.opacity = 0; // Fade out
-        });
         setTimeout(() => {
             drawArrows.forEach(arrow => {
+                arrow.classList.add("fade-out");
                 arrow.classList.add("hidden");
                 console.log(arrow)
             });
@@ -81,7 +79,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         
             setTimeout(function (){
                 drawArrows.forEach(arrow => {
-                    arrow.style.opacity = 1; // Fade out
                     arrow.classList.remove("fade-out");
                     arrow.classList.remove("hidden");
                     });                        
