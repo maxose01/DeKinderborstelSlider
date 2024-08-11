@@ -84,19 +84,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     });                        
             }, 1000);               
 
-            // // Restart the arrow draw animation
-            // drawArrows.forEach(arrow => {
-            //     arrow.classList.remove("fade-out");
-            //     arrow.classList.remove("hidden");
-
-            //     // arrow.style.display = 'block';
-            //     arrow.style.animation = 'none';
-            //     arrow.offsetHeight; // Trigger reflow
-            //     arrow.style.animation = 'draw 2.5s forwards';
-            //     arrow.classList.remove('animate');
-            //     arrow.offsetWidth; // Trigger reflow
-            //     arrow.classList.add('animate');
-            // });
         }, 1000); // Wait for fade out to complete before updating
     }
 
