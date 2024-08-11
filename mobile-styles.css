@@ -27,10 +27,10 @@ body {
 }
 
 .arrow {
-    width: 100px;
-    height: 150px;
+    width: 90px;
+    height: 130px;
     transform: rotate(125deg) scale(-1, 1);
-    margin-left: 55px;
+    margin-left: 40px;
     margin-bottom: 25px;
 }
 
@@ -64,7 +64,6 @@ body {
 .container {
     margin-top: 150px;
     width: 100%;
-    max-width: 375px;
     height: 400px;
     overflow: hidden;
     position: relative;
@@ -85,10 +84,9 @@ body {
 
 .frame img.cloud {
     position: absolute;
-    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 375px;
+    width: 100vw;
     height: auto;
     transition: transform 1s ease-in-out;
     z-index: 0;
@@ -233,7 +231,7 @@ body {
 
     .frame img.cloud {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .frame img.toothbrush {
