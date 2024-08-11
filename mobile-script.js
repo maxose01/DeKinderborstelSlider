@@ -6,10 +6,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const totalFrames = frames.length;
     const cloudText = document.getElementById('cloud-text');
     const minicloud = document.querySelector('.minicloud');
+    const drawArrows = document.querySelectorAll('.draw-arrow');
     const colors = ['#FFDE4D', '#C1E1F4'];
     const texts = ['Gezonde glimlach', 'Plezier bij poetsen', 'Gemakkelijk in gebruik', 'Langdurige batterij', 'Kindvriendelijk ontwerp', 'Effectieve reiniging', 'Tandvleesbescherming', 'Duurzaam en betrouwbaar', 'Gratis verzending', 'Minder tandplak', 'Beter poetsen'];
 
-    if (!cloudText || !minicloud) {
+    if (!cloudText || !minicloud || drawArrows.length === 0) {
         console.error('Required elements are not found in the DOM.');
         return;
     }
@@ -68,8 +69,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function fadeCloud() {
         minicloud.style.opacity = 0; // Fade out
         setTimeout(() => {
+            drawArrows.forEach(arrow => {
+                arrow.classList.add("fade-out");
+                arrow.classList.add("hidden");
+                console.log(arrow)
+            });
             updateCloud(); // Update color and text while invisible
             minicloud.style.opacity = 1; // Fade in
+        
+            setTimeout(function (){
+                drawArrows.forEach(arrow => {
+                    arrow.classList.remove("fade-out");
+                    arrow.classList.remove("hidden");
+                    });                        
+            }, 1000);               
+
+            // // Restart the arrow draw animation
+            // drawArrows.forEach(arrow => {
+            //     arrow.classList.remove("fade-out");
+            //     arrow.classList.remove("hidden");
+
+            //     // arrow.style.display = 'block';
+            //     arrow.style.animation = 'none';
+            //     arrow.offsetHeight; // Trigger reflow
+            //     arrow.style.animation = 'draw 2.5s forwards';
+            //     arrow.classList.remove('animate');
+            //     arrow.offsetWidth; // Trigger reflow
+            //     arrow.classList.add('animate');
+            // });
         }, 1000); // Wait for fade out to complete before updating
     }
 
