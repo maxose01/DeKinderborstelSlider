@@ -1,10 +1,122 @@
+@font-face {
+    font-family: 'Jua';
+    src: url('fonts/jua-cufonfonts-webfont/Jua-Regular.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Jua", sans-serif;
     height: 100vh;
     margin: 0;
     background-color: transparent;
+}
+
+.top-cloud-container {
+    width: 150px; /* Smaller width */
+    position: fixed;
+    top: 30px; /* Adjust as needed */
+    left: 0px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's on top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    width: 90px;
+    height: 130px;
+    transform: rotate(125deg) scale(-1, 1);
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
+.arrow .draw-arrow {
+    stroke-width: 3;
+    stroke: #2D2D2D;
+    fill: none;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-name: draw;
+    transition: opacity 1s ease-out; /* Ensure opacity transition */
+}
+
+
+.arrow .draw-arrow.tail-1 {
+    animation-delay: .5s;
+}
+
+.arrow .draw-arrow.tail-2 {
+    animation-delay: .7s;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#cloud-text {
+    margin: 5px 10px !important;
+    margin-bottom: 10px;
+}
+
+.minicloud {
+    width: 150px; /* Adjusted width */
+    height: 40px; /* Adjusted height */
+    background: #FFDE4D; /* Initial color */
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    position: relative;
+    margin: 30px auto; /* Adjusted margin */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-align: center; /* Center text */
+    transition: background 1s ease-in-out, opacity 1s ease-in-out; /* Ensure opacity transition */
+    opacity: 1; /* Ensure opacity is set to 1 by default */
+    font-size: 13px; /* Adjusted font size */    
+}
+
+.minicloud p {
+    margin: 0; /* Remove default margin */
+    position: absolute;
+    top: 2px;
+}
+
+.minicloud:after, .minicloud:before {
+    content: '';
+    position: absolute;
+    background: #FFDE4D; /* Ensure the default color is set */
+    z-index: -1;
+    transition: background 1s ease-in-out;
+}
+
+.minicloud:after {
+    width: 40px; /* Adjusted size */
+    height: 40px; /* Adjusted size */
+    top: -20px; /* Adjusted position */
+    left: 20px; /* Adjusted position */
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+
+.minicloud:before {
+    width: 70px; /* Adjusted size */
+    height: 70px; /* Adjusted size */
+    top: -35px; /* Adjusted position */
+    right: 20px; /* Adjusted position */
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
 }
 
 .container {
