@@ -17,7 +17,7 @@ body {
 }
 
 .top-cloud-container {
-    width: 150px; /* Smaller width */
+    width: 180px; /* Smaller width */
     position: fixed;
     top: 30px; /* Adjust as needed */
     right: 0px; /* Adjust as needed */
@@ -68,8 +68,8 @@ body {
 }
 
 .minicloud {
-    width: 150px; /* Adjusted width */
-    height: 40px; /* Adjusted height */
+    width: 180px; /* Adjusted width */
+    height: 48px; /* Adjusted height */
     background: #FFDE4D; /* Initial color */
     border-radius: 100px;
     -webkit-border-radius: 100px;
@@ -83,7 +83,7 @@ body {
     text-align: center; /* Center text */
     transition: background 1s ease-in-out, opacity 1s ease-in-out; /* Ensure opacity transition */
     opacity: 1; /* Ensure opacity is set to 1 by default */
-    font-size: 13px; /* Adjusted font size */    
+    font-size: 16px; /* Adjusted font size */    
 }
 
 .minicloud p {
@@ -101,20 +101,20 @@ body {
 }
 
 .minicloud:after {
-    width: 40px; /* Adjusted size */
-    height: 40px; /* Adjusted size */
-    top: -20px; /* Adjusted position */
-    left: 20px; /* Adjusted position */
+    width: 48px; /* Adjusted size */
+    height: 48px; /* Adjusted size */
+    top: -24px; /* Adjusted position */
+    left: 28px; /* Adjusted position */
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
 }
 
 .minicloud:before {
-    width: 70px; /* Adjusted size */
-    height: 70px; /* Adjusted size */
-    top: -35px; /* Adjusted position */
-    right: 20px; /* Adjusted position */
+    width: 82px; /* Adjusted size */
+    height: 82px; /* Adjusted size */
+    top: -42px; /* Adjusted position */
+    right: 24px; /* Adjusted position */
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;

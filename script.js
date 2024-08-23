@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const frames = document.querySelectorAll('.frame');
     const buttons = document.querySelectorAll('.color-btn');
