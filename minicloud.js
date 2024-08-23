@@ -86,5 +86,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }, 1000); // Wait for fade out to complete before updating
     }
-
+    
+    function applyScreenWidthStyles() {
+        var screenWidth = window.screen.width;
+    
+        if (screenWidth <= 1200) {
+            document.querySelector('.top-cloud-container').style.display = 'none';
+        } else {
+            document.querySelector('.top-cloud-container').style.display = 'block';
+        }
+    }
+    
+    // Call the function on page load
+    applyScreenWidthStyles();
+    
+    // Call the function on window resize
+    window.addEventListener('resize', applyScreenWidthStyles);
+    
 });

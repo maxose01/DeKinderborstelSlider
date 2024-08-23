@@ -240,9 +240,3 @@ body {
         height: 15px;
     }
 }
-
-@media (max-device-width: 1200px) {
-    .top-cloud-container {
-        display: none;
-    }
-}
