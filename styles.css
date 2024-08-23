@@ -13,13 +13,14 @@ body {
     height: 100vh;
     margin: 0;
     background-color: transparent;
+
 }
 
 .top-cloud-container {
     width: 150px; /* Smaller width */
     position: fixed;
     top: 30px; /* Adjust as needed */
-    left: 0px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
     z-index: 1000; /* Ensure it's on top */
     display: flex;
     flex-direction: column;
@@ -29,8 +30,8 @@ body {
 .arrow {
     width: 90px;
     height: 130px;
-    transform: rotate(125deg) scale(-1, 1);
-    margin-left: 40px;
+    transform: rotate(230deg) scale(1, 1);
+    margin-right: 45px;
     margin-bottom: 25px;
 }
 
