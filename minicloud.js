@@ -89,8 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function applyScreenWidthStyles() {
         var screenWidth = window.screen.width;
-    
-        if (screenWidth <= 1200) {
+        console.log("screenWidth = ", screenWidth);
+        if (screenWidth >= 750 && screenWidth <= 1200) {
             document.querySelector('.top-cloud-container').style.display = 'none';
         } else {
             document.querySelector('.top-cloud-container').style.display = 'block';
