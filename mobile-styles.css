@@ -20,7 +20,7 @@ body {
     position: fixed;
     top: 30px; /* Adjust as needed */
     left: 0px; /* Adjust as needed */
-    z-index: 1000; /* Ensure it's on top */
+    z-index: 100; /* Ensure it's on top */
     display: flex;
     flex-direction: column;
     align-items: center;
