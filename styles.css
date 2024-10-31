@@ -206,8 +206,12 @@ body {
     background-color: pink;
 }
 
+.hide-el {
+    display: none; /* Verberg op tablets */
+}
+
 /* Media Queries for Responsiveness */x
-@media (max-width: 775px) {
+@media screen and (max-width: 775px) {
     .container {
         width: 100%;
         height: auto;

@@ -102,5 +102,23 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Call the function on window resize
     window.addEventListener('resize', applyScreenWidthStyles);
+
+    function isTablet() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        return /ipad|tablet|(android(?!.*mobile))/i.test(userAgent);
+    }
     
+    function applyTabletClass() {
+        const elements = document.querySelectorAll('.tablet-hidden');
+        elements.forEach(element => {
+            if (isTablet()) {
+                element.classList.add('hide-el'); // Verbergt op tablets
+            } else {
+                element.classList.remove('hide-el'); // Toont op andere apparaten
+            }
+        });
+    }
+    
+    // Roep de functie aan bij laden
+    window.addEventListener('load', applyTabletClass);
 });
