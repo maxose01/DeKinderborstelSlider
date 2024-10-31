@@ -207,7 +207,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .minicloud {
+    .arrow, .minicloud {
         display: none;
     }
 }
