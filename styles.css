@@ -206,12 +206,6 @@ body {
     background-color: pink;
 }
 
-@media (max-width: 1200px) {
-    .arrow, .minicloud {
-        display: none;
-    }
-}
-
 /* Media Queries for Responsiveness */x
 @media (max-width: 775px) {
     .container {

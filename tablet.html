@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Toothbrush Display</title>
-    <link rel="stylesheet" href="mobile-styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="frame yellow active" id="yellow-frame">
-            <img class="cloud" src="images/mobile-toothbrush-yellow.png" alt="Yellow Cloud">
+            <img class="cloud" src="images/yellow-cloud.webp" alt="Yellow Cloud">
+            <img class="toothbrush" src="images/yellow.png" alt="Yellow Toothbrush">
         </div>
         <div class="frame blue" id="blue-frame">
-            <img class="cloud" src="images/mobile-toothbrush-blue.png" alt="Blue Cloud">
+            <img class="cloud" src="images/blue-cloud.webp" alt="Blue Cloud">
+            <img class="toothbrush" src="images/blue.png" alt="Blue Toothbrush">
         </div>
         <div class="frame pink" id="pink-frame">
-            <img class="cloud" src="images/mobile-toothbrush-pink.png" alt="Pink Cloud">
+            <img class="cloud" src="images/pink-cloud.webp" alt="Pink Cloud">
+            <img class="toothbrush" src="images/pink.png" alt="Pink Toothbrush">
+        </div>
+        <div class="color-buttons">
+            <button class="color-btn yellow" data-color="yellow"></button>
+            <button class="color-btn blue" data-color="blue"></button>
+            <button class="color-btn pink" data-color="pink"></button>
         </div>
     </div>
-    <script src="mobile-script.js"></script>
+    <script src="script.js"></script>
+    <script src="minicloud.js"></script>
 </body>
 </html>
