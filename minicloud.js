@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             drawArrows.forEach(arrow => {
                 arrow.classList.add("hidden");
-                console.log(arrow)
             });
             updateCloud(); // Update color and text while invisible
             minicloud.style.opacity = 1; // Fade in
@@ -89,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function applyScreenWidthStyles() {
         var screenWidth = window.screen.width;
-        console.log("screenWidth = ", screenWidth);
         if (screenWidth >= 750 && screenWidth <= 1200) {
             document.querySelector('.top-cloud-container').style.display = 'none';
         } else {
